@@ -458,6 +458,14 @@ footer ul li a:hover {
   color: #2d9ce0;
 }
 
+/* Header */
+.page_title {
+  color: #626970;
+  font-family: "MavenPro-300";
+  font-size: 45px;
+  margin-bottom: 0.75em;
+}
+
 /* Buttons */
 .button {
   background: #fff;
@@ -490,6 +498,7 @@ footer ul li a:hover {
 .box {
   background: #f5f8f9;
   border: 1px solid #D7DCDE;
+  margin: 0 0 35px;
 
   -webkit-box-shadow: 0 0 2px rgba(89, 111, 127, 0.2);
   -moz-box-shadow: 0 0 2px rgba(89, 111, 127, 0.2);
@@ -511,7 +520,7 @@ footer ul li a:hover {
 
 .box_header {
   background: #ffffff;
-  border-bottom: 2px solid #e2e9eb;
+  border-bottom: 1px solid #d5d5d5;
   color: #474c51;
   font-family: "MavenPro-Bold";
   font-size: 20px;
@@ -532,9 +541,9 @@ footer ul li a:hover {
   background: linear-gradient(to bottom,  #ffffff 0%,#e7eef0 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7eef0',GradientType=0 );
 
-  -webkit-box-shadow: 0 4px rgba(0,0,0,0.05);
-  -moz-box-shadow: 0 4px rgba(0,0,0,0.05);
-  box-shadow: 0 4px rgba(0,0,0,0.05);
+  -webkit-box-shadow: 0 4px rgba(0,0,0,0.04);
+  -moz-box-shadow: 0 4px rgba(0,0,0,0.04);
+  box-shadow: 0 4px rgba(0,0,0,0.04);
 
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
@@ -628,11 +637,57 @@ footer ul li a:hover {
   .icon.logs {background-position: 0 -90px;}
   .active .icon.logs {background-position: -18px -90px;}
 
+.big_icon {
+  background: url('../images/big_icons.png') 0 0;
+  display: inline-block;
+  height: 45px;
+  vertical-align: middle;
+  width: 45px;
+}
+
+  .big_icon.printer {background-position: 0 0;}
+  .big_icon.postcard {background-position: 0 -45px;}
+  .big_icon.check {background-position: 0 -90px;}
+  .big_icon.mail {background-position: 0 -135px;}
+  .big_icon.address {background-position: 0 -180px;}
+  .big_icon.verify {background-position: 0 -225px;}
+
 .box_content {
   background: #fff;
   border-left: 1px solid #ddddde;
   float: right;
   width: 647px;
+}
+
+.boxed_links {background: #fff;}
+.boxed_links li {
+  border-bottom: 1px solid #e4e6e7;
+  border-right: 1px solid #e4e6e7;
+  float: left;
+  font-size: 16px;
+  width: 443px;
+}
+
+.boxed_links a {
+  color: #a7a9ac;
+  display: block;
+  padding: 30px 20px 30px 130px;
+  position: relative;
+}
+
+.boxed_links a strong {
+  color: #474c51;
+  display: block;
+  font-family: "MavenPro-Semibold";
+  font-size: 22px;
+  margin: 0 0 5px;
+}
+
+.boxed_links a:hover strong {text-decoration: underline;}
+
+.boxed_links a .big_icon {
+  left: 50px;
+  position: absolute;
 }
 
 /* Dashboard */
