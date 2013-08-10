@@ -143,6 +143,30 @@ header .subheader .header_button:active {
   background: rgba(255,255,255,.8);
 }
 
+/* Switch */
+.switch {
+  background: url('../images/switch.png') 0 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: middle;
+  width: 53px;
+}
+
+.switch.on {background-position: 0 -25px;}
+
+.switch input {
+  border: 1px;
+  height: 1px;
+  left: -30px;
+  padding: 0;
+  position: absolute;
+  top: -30px;
+  width: 1px;
+}
+
 .how {
   padding-top: 54px;
   padding-bottom: 80px;
@@ -556,6 +580,12 @@ footer ul li a:hover {
   font-size: 1em;
 }
 .box_header .buttons {float: right;}
+
+.box_header .buttons {
+  color: #bbbfc1;
+  font-size: 13px;
+}
+.box_header .buttons .active {color: #1a9b2d;}
 
 .column_fixer {overflow: hidden;}
 
