@@ -690,13 +690,14 @@ footer ul li a:hover {
 .team h1 {
   color: #5b6267;
   font-size: 32px;
-  line-height: 0.9;
+  line-height: 0.95;
   margin: 0 0 20px;
 }
 
 .team header small {
+  color: #9a9da0;
   display: block;
-  margin: 0 0 20px;
+  margin: 0 0 15px;
 }
 
 .team header a {font-size: 14px;}
@@ -705,6 +706,8 @@ footer ul li a:hover {
   float: right;
   width: 365px;
 }
+
+.team div p:last-child {margin: 0;}
 
 .icon {
   background: url('../images/sidebar_icons.png') 0 0;
