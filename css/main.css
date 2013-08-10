@@ -26,6 +26,7 @@ body, input, textarea {
 }
 
 a {
+  color: #2185d7;
   text-decoration: none;
 }
 
@@ -550,7 +551,10 @@ footer ul li a:hover {
   border-radius: 3px 3px 0 0;
 }
 
-.box_header h1 {float: left;}
+.box_header h1 {
+  float: left;
+  font-size: 1em;
+}
 .box_header .buttons {float: right;}
 
 .column_fixer {overflow: hidden;}
@@ -610,6 +614,97 @@ footer ul li a:hover {
 }
 
 .box_sidebar a .icon {margin-right: 0.25em;}
+
+.box .light {
+  background: #fff;
+  color: #848688;
+  line-height: 1.9;
+  padding: 35px 50px;
+}
+
+.box .light h1 {
+  color: #5B6267;
+  font-family: "MavenPro-Bold";
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0 0 0.75em;
+  text-transform: uppercase;
+}
+
+.box .medium {
+  background: #F2F4F5;
+  border-color: #DFE3E7;
+  color: #848688;
+  line-height: 1.9;
+  padding: 35px 50px;
+}
+
+/* About */
+.about .text {
+  float: left;
+  width: 60%;
+}
+
+.about .image {
+  float: right;
+  text-align: center;
+  width: 35%;
+}
+
+/* Team */
+.team {
+  margin: 0 auto;
+  width: 745px;
+}
+.team li {
+  border-top: 1px solid #fff;
+  padding: 45px 0;
+}
+.team li:first-child {
+  border: 0;
+  padding-top: 0;
+}
+
+.team img {
+  float: left;
+  height: 152px;
+  margin: 0 50px 0 0;
+  width: 152px;
+}
+
+.team header {
+  background: none;
+  border: 0;
+  float: left;
+  font-family: "MavenPro-Bold";
+  line-height: 1;
+  margin: 15px 30px 0 0;
+  text-shadow: 0 1px #fff;
+  text-transform: uppercase;
+  width: 145px;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.team h1 {
+  color: #5b6267;
+  font-size: 32px;
+  line-height: 0.9;
+  margin: 0 0 20px;
+}
+
+.team header small {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.team header a {font-size: 14px;}
+
+.team div {
+  float: right;
+  width: 365px;
+}
 
 .icon {
   background: url('../images/sidebar_icons.png') 0 0;
