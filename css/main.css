@@ -883,6 +883,7 @@ footer ul li a:hover {
 
   .icon.zoom {
     background: url('../images/icon_zoom.png') no-repeat center center;
+    width: 19px;
   }
 
 .big_icon {
