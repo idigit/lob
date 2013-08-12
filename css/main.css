@@ -511,44 +511,54 @@ code {
   background: rgba(0,0,0,.4);
   display: block;
   float: left;
+  overflow: hidden;
   text-indent: -10000px;
   -moz-box-shadow: 0 1px 3px rgba(0,0,0,.28), inset 0 -2px 0 rgba(0,0,0,.13);
   -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.28), inset 0 -2px 0 rgba(0,0,0,.13);
   box-shadow: 0 1px 3px rgba(0,0,0,.28), inset 0 -2px 0 rgba(0,0,0,.13);
   border-radius: 3px;
-  cursor: pointer;
-  cursor: hand;
+}
+
+.dark ul li:hover .stripe {display: none;}
+.dark ul li:hover .flipped {display: block;}
+
+.dark ul .stripe,
+.dark ul .flipped {
+  height: 100%;
+  width: 100%;
 }
 
 .dark ul li:last-child {
   margin-right: 0;
 }
 
-.dark ul li.stripe {
+.dark ul .stripe {
   background: rgba(0,0,0,.4) url(../images/stripe_logo.png) center center no-repeat;
 }
 
-.dark ul li#flipped {
+.dark ul .flipped {
   background: #34a5eb;
   text-indent: 0;
   text-align: left;
 }
 
-.dark ul li#flipped p {
+.dark ul .flipped p {
   padding: 20px;
   font-family: "MavenPro-Semibold";
   line-height: 1.3;
 }
 
-.dark ul li#flipped p span {
+.dark ul .flipped p span {
   display: block;
   margin-top: 20px;
   font-family: "MavenPro-Regular";
 }
 
-.dark ul li#flipped p span strong {
+.dark ul .flipped p span strong {
   font-family: "MavenPro-Bold";
 }
+
+.dark ul .flipped a {color: #fff; text-decoration: underline;}
 
 footer {
   padding: 30px 0;
