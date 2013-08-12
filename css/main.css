@@ -155,7 +155,7 @@ header {
 }
 
 header .header {
-  padding: 16px 0 18px;
+  padding: 17px 0 18px;
 }
 
 header h1 {
@@ -1062,8 +1062,23 @@ footer ul li a:hover {
 .product_price {
   font-size: 22px;
   padding: 50px 30px;
+  position: relative;
   text-align: center;
   text-shadow: 0 -1px rgba(0,0,0,0.5);
+}
+
+.product_price:after {
+  border-color: #626970 transparent transparent;
+  border-style: solid;
+  border-width: 7px;
+  bottom: -14px;
+  content: " ";
+  display: block;
+  height: 0;
+  left: 27px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
 }
 
 .product_price strong {
