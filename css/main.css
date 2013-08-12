@@ -1066,7 +1066,7 @@ footer ul li a:hover {
   font-family: "MavenPro-Bold";
   font-size: 32px;
   margin: 0 0 5px;
-  text-shadow: 0 2px 2px #333;
+  text-shadow: 0 1px 1px #333;
 }
 
 .prices strong small {
