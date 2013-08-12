@@ -562,8 +562,63 @@ code {
   height: 246px;
 }
 
-.pricing .right {
+.pricing_calculator {
+  height: 100%;
+  position: relative;
+}
 
+.pricing_calculator strong {
+  color: #777A7E;
+  font-family: "MavenPro-Semibold";
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  top: 50px;
+  width: 141px;
+}
+
+.pricing_calculator .price {
+  color: #319AE7;
+  font-family: "MavenPro-Bold";
+  font-size: 42px;
+  height: 68px;
+  left: 10px;
+  padding: 15px 0 0;
+  position: absolute;
+  top: 101px;
+  text-align: center;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.1);
+  width: 143px;
+}
+
+.pricing_calculator .price small {
+  font-size: 20px;
+  vertical-align:top;
+}
+
+.pricing_calculator .price span {
+  color: #A0A2A4;
+  display: block;
+  font-family: "MavenPro-Regular";
+  font-size: 12px;
+  margin-top: 3px;
+}
+
+.pricing_calculator .meter {
+  background: #333 url('../images/pricing_tooltip.png');
+  bottom: 47px;
+  color: #fff;
+  display: block;
+  font-family: "MavenPro-Bold";
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  padding-left: 8px;
+  position: absolute;
+  right: 90px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  width: 74px;
 }
 
 .pricing .left {
@@ -993,6 +1048,31 @@ footer ul li a:hover {
 }
 
 .team div p:last-child {margin: 0;}
+
+.about_map {
+  position: relative;
+}
+
+.about_map .tooltip {
+  color: #BDC0C1;
+  font-family: 'MavenPro-Semibold';
+  font-size: 14px;
+  height: 28px;
+  left: 417px;
+  line-height: 1.2;
+  padding: 15px;
+  position: absolute;
+  text-shadow: 1px 1px rgba(0,0,0,0.4);
+  top: 52px;
+  width: 211px;
+}
+
+.about_map .tooltip strong {
+  color: #fff;
+  display: block;
+  font-family: "MavenPro-Bold";
+  font-size: 16px;
+}
 
 .icon {
   background: url('../images/sidebar_icons.png') 0 0;
