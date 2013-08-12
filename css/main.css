@@ -12,9 +12,115 @@
     zoom:1;
 }
 
+/* Forms */
+.styled_select {
+  border: 1px solid #cdd0d3;
+  display: block;
+  margin: 0.15em 0 1em;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  background: #ffffff;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #e5e7eb 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e7eb));
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e7eb 100%);
+  background: -o-linear-gradient(top,  #ffffff 0%,#e5e7eb 100%);
+  background: -ms-linear-gradient(top,  #ffffff 0%,#e5e7eb 100%);
+  background: linear-gradient(to bottom,  #ffffff 0%,#e5e7eb 100%);
+
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0152);
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+.styled_select:after {
+  background: url('../images/select_arrow.gif');
+  content: "";
+  display: block;
+  height: 14px;
+  margin-top: -7px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 7px;
+  z-index: 1;
+}
+
+.styled_select select {
+  background: none;
+  border: 0;
+  color: #737a80;
+  cursor: pointer;
+  display: block;
+  font-family: "MavenPro-Bold";
+  font-size: 16px;
+  margin: 0;
+  padding: 13px 0 13px 13px;
+  position: relative;
+  text-shadow: 0 1px #fff;
+  width: 110%;
+  z-index: 2;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"] {
+  background: #fff;
+  border: 1px solid #B4BBC1;
+  color: #737a80;
+  display: block;
+  font-family: "MavenPro-Bold";
+  font-size: 16px;
+  padding: 13px;
+  text-shadow: 0 1px #fff;
+  width: 100%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2) inset;
+}
+
+::-webkit-input-placeholder {
+   color: #ABAFB3;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+
+:-moz-placeholder {
+   color: #ABAFB3;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+
+::-moz-placeholder {
+   color: #ABAFB3;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+
+:-ms-input-placeholder {
+   color: #ABAFB3;
+   font-size: 13px;
+   text-transform: uppercase;
+}
+
 /* Homepage
 --------------------------------------------- */
-
 body {
   background: #fff;
 }
@@ -378,7 +484,7 @@ code {
 }
 
 .dark {
-
+  color: #bdc2c7;
 }
 
 .dark h1 {
@@ -661,6 +767,12 @@ footer ul li a:hover {
   text-transform: uppercase;
 }
 
+.box .light h2 {
+  color: #50555b;
+  font-family: 'MavenPro-Semibold';
+  font-size: 20px;
+}
+
 .box .medium {
   background: #F2F4F5;
   border-color: #DFE3E7;
@@ -764,6 +876,14 @@ footer ul li a:hover {
 
   .icon.logs {background-position: 0 -90px;}
   .active .icon.logs {background-position: -18px -90px;}
+
+  .icon.plus {
+    background: url('../images/icon_plus.png') no-repeat center center;
+  }
+
+  .icon.zoom {
+    background: url('../images/icon_zoom.png') no-repeat center center;
+  }
 
 .big_icon {
   background: url('../images/big_icons.png') 0 0;
@@ -874,4 +994,109 @@ footer ul li a:hover {
   height: 24px;
   line-height: 24px;
   padding: 0 5px;
+}
+
+/* Product Page */
+.product_info {overflow: hidden;}
+
+.product_info .text {
+  background: #f5f9f9 url('../images/faux_border.gif') repeat-y 294px 0;
+  border-right: 1px solid #E4E6E7;
+  float: left;
+  position: relative;
+  width: 590px;
+}
+
+.product_info .text h1 {
+  font-family: 'MavenPro-300';
+  font-size: 38px;
+  text-transform: none;
+}
+
+.product_info .add_job {
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 15px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.product_options {border-top: 1px solid #D4D7D7;}
+
+.product_options li {
+  color: #ABAEAE;
+  float: left;
+  font-family: "MavenPro-Bold";
+  font-size: 13px;
+  padding: 30px 70px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 155px;
+}
+
+.product_options img {display: block; margin: 0 auto 0.75em;}
+.product_options .zoom {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+}
+
+.product_info .sidebar {
+  background: #fff;
+  float: right;
+  width: 297px;
+}
+
+.product_info .text,
+.product_info .sidebar {
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+}
+
+.product_price {
+  font-size: 22px;
+  padding: 50px 30px;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0,0,0,0.5);
+}
+
+.product_price strong {
+  color: #fff;
+  font-family: "MavenPro-Bold";
+  font-size: 36px;
+}
+
+.sidebar .product_form {
+  padding: 30px;
+}
+
+.product_form p {line-height: 1.2;}
+.product_form label {
+  color: #ABAFB3;
+  font-family: "MavenPro-Bold";
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.product_form .advanced_settings {
+  display: inline-block;
+  font-family: "MavenPro-Bold";
+  font-size: 13px;
+  margin: 1.2em 0 0;
+  text-transform: uppercase;
+}
+
+.product_wrap .text {
+  float: left;
+  width: 530px;
+}
+
+.product_wrap figure {
+  float: right;
+  margin: 10px 0 0;
+  text-align: center;
+  width: 200px;
 }
