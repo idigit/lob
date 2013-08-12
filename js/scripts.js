@@ -1,5 +1,19 @@
 $(document).ready(function() {
+  var $li = $('.masthead').find('.sub').parent(),
+      t;
+
   $('.masthead').waypoint('sticky');
+
+  $li.hoverIntent({
+    timeout: 150,
+    over: function() {
+      $(this).find('.sub').show();
+      clearTimeout(t);
+    },
+    out: function() {
+      $(this).find('.sub').hide();
+    }
+  });
 
   $('.custom_select').each(function() {
 
