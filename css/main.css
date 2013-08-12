@@ -1100,3 +1100,15 @@ footer ul li a:hover {
   text-align: center;
   width: 200px;
 }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  color: #abb2ba;
+  font-family: "MavenPro-Bold";
+  font-size: 15px;
+  margin: -2.5em 0 1.5em;
+  text-transform: uppercase;
+}
+
+.breadcrumbs a {color: #abb2ba;}
+.breadcrumbs strong {color: #626970;}
