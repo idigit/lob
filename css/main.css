@@ -155,8 +155,7 @@ header {
 }
 
 header .header {
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 16px 0 18px;
 }
 
 header h1 {
@@ -167,8 +166,11 @@ header h1 a {
   display: block;
   width: 87px;
   height: 32px;
-  background: url(../images/logo.png) no-repeat;
-  text-indent: -10000px;
+  background: url(../images/logo.png) no-repeat center left;
+  padding-left: 35px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
 }
 
 header ul {
