@@ -88,7 +88,7 @@
   top: 100%;
   right: -1px;
   left: -1px;
-  z-index:9999;
+  z-index: 999;
   margin: 0;
   padding:0 1px;
   list-style:none;
@@ -325,6 +325,7 @@ header .sub {
   left: 50%;
   top: 35px;
   width: 211px;
+  z-index: 9999;
 
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
