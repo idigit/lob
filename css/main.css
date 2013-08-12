@@ -511,6 +511,7 @@ code {
 }
 
 .pricing {
+  background: url(../images/pricing.png) no-repeat;
   height: 246px;
 }
 
