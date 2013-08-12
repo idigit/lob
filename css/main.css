@@ -235,6 +235,7 @@ header h1 a {
   color: #fff;
   font-size: 40px;
   line-height: 1;
+  font-family: 'MavenPro-Regular';
 }
 
 header ul {
@@ -819,7 +820,7 @@ footer ul li a:hover {
   padding: 0 20px;
 }
 
-.box_sidebar .active a {
+.box_sidebar .active a, .box_sidebar .active a:hover {
   background: #56b1f1;
   color: #fff;
   font-family: "MavenPro-Bold";
@@ -838,6 +839,10 @@ footer ul li a:hover {
   background: -ms-linear-gradient(top,  #56b1f1 0%,#319be4 100%);
   background: linear-gradient(to bottom,  #56b1f1 0%,#319be4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56b1f1', endColorstr='#319be4',GradientType=0 );
+}
+
+.box_sidebar a:hover {
+  background: #fff;
 }
 
 .box_sidebar a .icon {margin-right: 0.25em;}
@@ -975,7 +980,8 @@ footer ul li a:hover {
 
   .icon.zoom {
     background: url('../images/icon_zoom.png') no-repeat center center;
-    width: 19px;
+    width: 20px;
+    height: 21px;
   }
 
 .big_icon {
@@ -1024,7 +1030,9 @@ footer ul li a:hover {
   margin: 0 0 5px;
 }
 
-.boxed_links a:hover strong {text-decoration: underline;}
+.boxed_links a:hover {
+  background: #f8f8f8;
+}
 
 .boxed_links a .big_icon {
   left: 50px;
