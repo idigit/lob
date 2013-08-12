@@ -204,10 +204,18 @@ section, footer {
   margin: 0 auto;
 }
 
-header {
+header, .stuck {
   background: url(../images/header_bg.png);
   box-shadow: 0 1px 6px rgba(18,73,111,.36), inset 0 -4px 2px rgba(0,0,0,.02);
   border-bottom: 1px solid #2885c4;
+  padding: 1px 0 0;
+}
+
+.stuck {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 header .header {
@@ -503,8 +511,11 @@ code {
 }
 
 .pricing {
-  background: url(../images/pricing.png) no-repeat;
   height: 246px;
+}
+
+.pricing .right {
+
 }
 
 .pricing .left {
