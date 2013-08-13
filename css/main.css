@@ -252,7 +252,7 @@ section, footer {
 }
 
 header, .stuck {
-  background: url(../images/header_bg.png);
+  background: #3297E9;
   box-shadow: 0 1px 6px rgba(18,73,111,.36), inset 0 -4px 2px rgba(0,0,0,.02);
   border-bottom: 1px solid #2885c4;
   padding: 1px 0 0;
@@ -389,7 +389,7 @@ header .sub li:last-child a {
 }
 
 header .sub a:hover {
-  background: url(../images/bg_medium.png);
+  background: #F9FBFC;
   color: #575d62;
 }
 
@@ -533,17 +533,17 @@ header .subheader .header_button:active {
 }
 
 .medium {
-  background: url(../images/bg_medium.png);
+  background: #F9FBFC;
   border-top: 1px solid #ebedef;
 }
 
 .light {
-  background: url(../images/bg_light.png);
+  background: #fff;
   border-top: 1px solid #ebedef;
 }
 
 .dark {
-  background: url(../images/bg_dark.png);
+  background: #61676E;
 }
 
 .left, .right {
@@ -1496,7 +1496,7 @@ html, .api_body {height: 100%;}
 }
 
 .api_nav ul a:hover {
-  background: url(../images/bg_medium.png);
+  background: #F9FBFC;
 }
 
 .api_nav ul .active {
