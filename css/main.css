@@ -1145,6 +1145,11 @@ footer ul li a:hover {
   width: 211px;
 }
 
+.address .about_map .tooltip {
+  left: 23px;
+  top: -138px;
+}
+
 .about_map .tooltip strong {
   color: #fff;
   display: block;
