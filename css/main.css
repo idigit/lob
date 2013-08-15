@@ -1132,17 +1132,57 @@ footer ul li a:hover {
 }
 
 .about_map .tooltip {
+  background: rgba(97,104,108,0.94);
+  border: 2px solid rgba(0,0,0,0.3);
   color: #BDC0C1;
   font-family: 'MavenPro-Semibold';
   font-size: 14px;
-  height: 28px;
   left: 417px;
   line-height: 1.2;
-  padding: 15px;
+  padding: 13px;
   position: absolute;
   text-shadow: 1px 1px rgba(0,0,0,0.4);
   top: 52px;
   width: 211px;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  background: -moz-linear-gradient(top,  rgba(97,104,108,0.94) 0%, rgba(75,83,87,0.94) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(97,104,108,0.94)), color-stop(100%,rgba(75,83,87,0.94)));
+  background: -webkit-linear-gradient(top,  rgba(97,104,108,0.94) 0%,rgba(75,83,87,0.94) 100%);
+  background: -o-linear-gradient(top,  rgba(97,104,108,0.94) 0%,rgba(75,83,87,0.94) 100%);
+  background: -ms-linear-gradient(top,  rgba(97,104,108,0.94) 0%,rgba(75,83,87,0.94) 100%);
+  background: linear-gradient(to bottom,  rgba(97,104,108,0.94) 0%,rgba(75,83,87,0.94) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f061686c', endColorstr='#f04b5357',GradientType=0 );
+}
+
+.about_map .tooltip:after {
+  border-color: rgba(0,0,0,0.66) transparent transparent;
+  border-style: solid;
+  border-width: 7px;
+  bottom: -16px;
+  content: " ";
+  display: block;
+  height: 0;
+  left: 50%;
+  margin-left: -9px;
+  position: absolute;
+  width: 0;
+  z-index: 1;
+}
+
+.about_map .tooltip:before {
+  background: url('../images/check.png');
+  content: "";
+  display: block;
+  height: 27px;
+  margin: -13px 0 0;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 26px;
 }
 
 .address .about_map .tooltip {
