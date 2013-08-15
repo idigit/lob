@@ -1351,7 +1351,11 @@ footer ul li a:hover {
   height: 199px;
 }
 
-.product_options img {display: block; margin: 0 auto 0.75em;}
+.product_options img {
+  display: block; 
+  margin: 20px auto 0.75em auto;
+}
+
 .product_options .zoom {
   position: absolute;
   top: 25px;
