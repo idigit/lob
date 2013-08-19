@@ -127,6 +127,32 @@ curl https://api.lob.com/v1/addresses \
           <p>curl uses the -u flag to pass basic auth credentials (adding a colon after your API key will prevent it from asking you for a password). One of our test API keys has been filled into all the examples on the page, so you can test out any example right away.</p>
         </div></aside>
       </section>
+
+      <section class="clearfix">
+        <div class="content"><div class="wrap">
+          <h1>Create a job</h1>
+          <p>Create a new job</p>
+          <h6>Arguments</h6>
+          <div class="arguments">
+            <dl>
+              <dt>name: </dt>
+              <dd>optional </dd>
+              <dt>to: </dt>
+              <dd>required <p class="argument-helper">Must either be an address ID or an array with correct address parameters. If an array is used, an address will be created for you and returned with an ID</p></dd>
+              <dt>from: </dt>
+              <dd>optional <p class="argument-helper">Must either be an address ID or an array with correct address parameters. If an array is used, an address will be created for you and returned with an ID</p></dd>
+              <dt>object1:</dt>
+              <dd>required <p class="argument-helper">Must be an object ID or an array with object parameters. Jobs can have N objects to add more, create a parameter called object{#}. If an array is used, the object will be created for you.</p></dd>
+              <dt>packaging_id:</dt>
+              <dd>optional <p class="argument-helper">Must be a valid packaging ID</p></dd>
+              <dt>service_id:</dt>
+              <dd>optional <p class="argument-helper">Must be a valid service ID</p></dd>
+            </dl>
+          </div>
+        </div></div>
+        <aside><div class="wrap">
+        </div></aside>
+      </section>
     </div><!-- /.api_content -->
   </div><!-- /.api_wrap -->
 
